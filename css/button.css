@@ -1,0 +1,17 @@
+.del-button {
+    background: url("../images/delete.png");
+    border: 0px;
+    width: 17px;  
+    height: 17px;
+    cursor: pointer;
+    margin-left : 10px;
+}
+
+.rev-button {
+    background: url("../images/revies.png");
+    border: 0px;
+    width: 17px;  
+    height: 17px;
+    cursor: pointer;
+    margin-left : 10px;
+}

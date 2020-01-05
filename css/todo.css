@@ -1,0 +1,65 @@
+.js-toDoForm input[type="text"] {
+    height: auto;
+    width: 200px;
+    -webkit-appearance: none;
+    text-align: center;
+    padding: 10px 30px;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid ;
+    font-size: 15px;
+}
+
+.js-toDoForm input[type="text"]::placeholder,
+.js-toDoForm input[type="text"]::-webkit-input-placeholder{
+    font-size: 15px;
+    color:white;
+}
+
+.js-toDoForm input[type="text"]:focus{
+    outline: none;
+    font-size: 20px;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder { 
+    color: transparent;
+} input[type="text"]:focus::-moz-placeholder { 
+    color: transparent;
+} input[type="text"]:focus:-ms-input-placeholder { 
+    color: transparent; 
+} 
+input[type="text"]:focus::-ms-input-placeholder { 
+    color: transparent;
+}
+
+.js-toDoList{
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.TodoButton {
+    margin-top : 15px;
+    margin-bottom : 15px;
+}
+
+ul li:hover:before{
+
+    content:attr(title);
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul li:hover:after {
+    text-decoration: underline;
+    color:tomato;
+    content: url("../images/delete.png" );
+}  

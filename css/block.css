@@ -1,0 +1,21 @@
+h3 {
+    font-size : 50px;
+	margin-top:0px;
+}
+
+body {
+	
+    text-align: center;
+    color : white;
+	font-size:20px;
+	background-color:black;
+}
+
+p {
+	margin-top:-20px;
+}
+#blacklist {
+	font-size:15px;
+	font-family:malgun gothic;
+	font-weight:bold;
+}

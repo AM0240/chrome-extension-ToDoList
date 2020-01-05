@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<script src="js/jquery.min.js"></script>
+	<script src="background.js"></script>
+	<script src="js/moment.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/date.css"/>
+    <link rel="stylesheet" href="css/todo.css"/>
+    <link rel="stylesheet" href="css/button.css"/>
+    <title>일정관리</title>
+</head>
+
+<body>
+    <span class="js-popup"><a href="block.html"><img class="btn-img" src="images\block.png" title="사이트 차단"></a></span>
+    <div class="MainContainer">
+        <div class="js-clock">
+            <h2>00:00</h2>
+        </div>
+	<div id="alert"></div>
+	<img class="img-alarm" src="images\alarm.png">
+	
+	<div></div>
+	<select name="notification" id="notification">
+			<option value="" selected disabled hidden>알림설정</option>
+			<option value="Noti_On_time">정시알림</option>
+			<option value="Noti_m5">5분 전</option>
+			<option value="Noti_m10">10분 전</option>
+			<option value="Noti_m30">30분 전</option>
+			<option value="Noti_h1">1시간 전</option>
+			<option value="Noti_day1">하루 전</option>
+		</select>
+    <form class="js-toDoForm">
+        <input type="text" name="item" id="item" class="defaultTextBox" placeholder="해야할 일을 적어주세요." required autocomplete="off"/>
+		<input type="text" id="nothing" style="display:none;"/>
+		<img id="btn_showNotification" src="images\bell.png" title="알림시간 설정" style="cursor:pointer"/>
+	</form>
+	
+	<!-- 월 일 시 분 시작-->
+	<select name="Noti_month" id="Noti_month" class="Noti_setTime" title="월">
+		<option value="default" selected disabled hidden>월</option>
+	</select>
+
+	<select name="Noti_day" id="Noti_day" class="Noti_setTime" title="일">
+		<option value="default" selected disabled hidden>일</option>
+	</select>
+
+	<select name="Noti_hour" id="Noti_hour" class="Noti_setTime" title="시">
+		<option value="default" selected disabled hidden>시</option>
+	</select>
+
+	<select name="Noti_minute" id="Noti_minute" class="Noti_setTime" title="분">
+		<option value="default" selected disabled hidden>분</option>
+	</select>
+	<!-- 월 일 시 분 끝-->
+
+    <ul class="js-toDoList list" id="list">
+    </ul>
+
+	<div class="copycontainer">
+        <a class="copyright" id="copyright" href="#" onclick="copyright()">초기화</a>
+    </div>
+	
+	<script src="js/todo.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/bg.js"></script>
+	<script src="js/notification.js"></script>
+</body>
+
+</html>
