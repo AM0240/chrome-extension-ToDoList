@@ -1,4 +1,4 @@
-# Chrome-Extension-ToDoList-Korean
+# Chrome-Extension-ToDoList
 
 # 기능
 
