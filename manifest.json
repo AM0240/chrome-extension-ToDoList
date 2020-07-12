@@ -5,46 +5,42 @@
 
 	"description": "To-do list & block site",
 	
-	"background": { "page": "main.html",
-					"persistent": true
-					 },
+	"background": 
+	{ 
+		"page": "main.html",
+		"persistent": true
+	},
 
 	"version": "1.0",
 	
-	"chrome_url_overrides" : {
-    "newtab": "main.html"
+	"chrome_url_overrides" : 
+	{
+    	"newtab": "main.html"
 	},
 
-	"browser_action": {
-	"popup": "main.html",
-	"default_icon": "images/48.png"
-
+	"browser_action": 
+	{
+		"popup": "main.html",
+		"default_icon": "images/48.png"
 	},
 
-	"icons": { 
-	
+	"icons": 
+	{ 
 		"16": "images/16.png",
 		"48": "images/48.png",
 		"72": "images/72.png",
-		"128": "images/128.png" 
-	
-	
+		"128": "images/128.png" 	
 	},
 
-	"permissions": [
-
-	"tabs",
-
-	"alarms",
-
-	"background",
-
-	"storage",
-
-	"notifications",
-	"webRequest", "webRequestBlocking",
-    "http://*/*", "https://*/*"
-
+	"permissions": 
+	[
+		"tabs",
+		"alarms",
+		"background",
+		"storage",
+		"notifications",
+		"webRequest", "webRequestBlocking",
+    	"http://*/*", "https://*/*"
 	]
 
 }

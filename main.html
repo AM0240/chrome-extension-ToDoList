@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/date.css"/>
     <link rel="stylesheet" href="css/todo.css"/>
     <link rel="stylesheet" href="css/button.css"/>
-    <title>일정관리</title>
+    <title>Web Scheduler</title>
 </head>
 
 <body>
+	<!-- 사이트 차단 링크 및 시계 -->
     <span class="js-popup"><a href="block.html"><img class="btn-img" src="images\block.png" title="사이트 차단"></a></span>
     <div class="MainContainer">
         <div class="js-clock">
@@ -20,8 +21,9 @@
         </div>
 	<div id="alert"></div>
 	<img class="img-alarm" src="images\alarm.png">
-	
 	<div></div>
+
+	<!-- 알림설정 -->
 	<select name="notification" id="notification">
 			<option value="" selected disabled hidden>알림설정</option>
 			<option value="Noti_On_time">정시알림</option>
@@ -31,13 +33,15 @@
 			<option value="Noti_h1">1시간 전</option>
 			<option value="Noti_day1">하루 전</option>
 		</select>
-    <form class="js-toDoForm">
+
+	<!-- 인풋박스 -->
+    <form class="js-toDoForm" style="padding-left: 30px;">
         <input type="text" name="item" id="item" class="defaultTextBox" placeholder="해야할 일을 적어주세요." required autocomplete="off"/>
 		<input type="text" id="nothing" style="display:none;"/>
 		<img id="btn_showNotification" src="images\bell.png" title="알림시간 설정" style="cursor:pointer"/>
 	</form>
 	
-	<!-- 월 일 시 분 시작-->
+	<!-- 월 일 시 분 설정 -->
 	<select name="Noti_month" id="Noti_month" class="Noti_setTime" title="월">
 		<option value="default" selected disabled hidden>월</option>
 	</select>
@@ -53,11 +57,13 @@
 	<select name="Noti_minute" id="Noti_minute" class="Noti_setTime" title="분">
 		<option value="default" selected disabled hidden>분</option>
 	</select>
-	<!-- 월 일 시 분 끝-->
+	<!---->
 
-    <ul class="js-toDoList list" id="list">
+	<!-- 등록된 ToDoList 표시 -->
+    <ul class="js-toDoList list" id="list" style="padding-right: 35px;">
     </ul>
 
+	<!-- 초기화버튼 -->
 	<div class="copycontainer">
         <a class="copyright" id="copyright" href="#" onclick="copyright()">초기화</a>
     </div>

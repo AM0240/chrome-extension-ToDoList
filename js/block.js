@@ -1,5 +1,4 @@
-
-//페이지 로드 이벤트
+//페이지 로드
 document.addEventListener('DOMContentLoaded',
 	function () {
 		// 블랙리스트에 추가

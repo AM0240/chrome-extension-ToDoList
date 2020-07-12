@@ -20,8 +20,12 @@ function genRandom() {
 }
 
 function init() {
-  const randomNumber = genRandom();
-  paintImage(randomNumber);
+
+  // 이미지 랜덤변경
+  //const randomNumber = genRandom();
+  //paintImage(randomNumber);
+
+  paintImage(2);
 }
 
 init();

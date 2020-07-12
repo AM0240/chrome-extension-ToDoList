@@ -78,7 +78,7 @@ function showNotification() {
 
  };
  
- // 1초마다 현재시간의 초를 검사한 후 0초가 되면 
+ // 1초마다 현재시간을 검사한 후 0초가 되면 
  playAlert = setInterval(function() {
 	 
 	var d = new Date();
