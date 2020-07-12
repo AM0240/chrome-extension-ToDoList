@@ -4,7 +4,7 @@
 
 * 할 일 목록 추가/삭제
 
-![addTodo.gif](https://www.dropbox.com/s/nsiffp2zb6se3en/addTodo.gif)
+![addTodo.gif](https://www.dropbox.com/s/nsiffp2zb6se3en/addTodo.gif?dl=0)
 - - -
 * 블랙리스트 사이트 접속 차단
 
