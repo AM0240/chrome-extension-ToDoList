@@ -1,6 +1,6 @@
-#Chrome-Extension-ToDoList
+# Chrome-Extension-ToDoList
 
-##기능
+## 기능
 
 * 할 일 목록 추가/삭제
 
