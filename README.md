@@ -2,14 +2,14 @@
 
 ## 기능
 
-* 할 일 목록 추가/삭제
+* 할일목록 추가/ 삭제/ 날짜설정
 
 ![](addTodo.gif)
 - - -
-* 블랙리스트 사이트 접속 차단
+* 블랙리스트에 등록된 사이트 접근 차단
 
 ![](siteBlock.gif)
 - - -
-* 백그라운드 알림기능
+* Rich Notifications (백그라운드 작동)
 
 ![](notification.gif)
